@@ -1,0 +1,25 @@
+.App {
+  /* text-align: center; */
+}
+
+textarea,
+input {
+  border: none;
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  padding: none;
+  width: auto;
+}
+
+.noteModal {
+  height: 800px !important;
+}
+
+.note-card {
+  max-height: 400px;
+  /* TODO: make this bigger for desktop */
+}
+
+.note-card-text {
+}
