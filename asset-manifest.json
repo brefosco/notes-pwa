@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/notes-pwa.github/static/css/main.68e356d9.css",
+    "main.js": "/notes-pwa.github/static/js/main.1fd56bdc.js",
+    "static/js/377.c1855308.chunk.js": "/notes-pwa.github/static/js/377.c1855308.chunk.js",
+    "service-worker.js": "/notes-pwa.github/service-worker.js",
+    "index.html": "/notes-pwa.github/index.html",
+    "main.68e356d9.css.map": "/notes-pwa.github/static/css/main.68e356d9.css.map",
+    "main.1fd56bdc.js.map": "/notes-pwa.github/static/js/main.1fd56bdc.js.map",
+    "377.c1855308.chunk.js.map": "/notes-pwa.github/static/js/377.c1855308.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68e356d9.css",
+    "static/js/main.1fd56bdc.js"
+  ]
+}
