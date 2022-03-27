@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Modal } from "react-bootstrap";
+import { Form, Modal } from "react-bootstrap";
 import { Context } from "../context";
 import iconTrash from "../icons/trash.png";
 import { NoteInterface } from "./types";
@@ -28,8 +28,11 @@ function NoteModal(props: NoteModalProps) {
 
   return (
     <Modal
+      // fullscreen="lg-down"
+      size="lg"
+      // autoFocus={true}
       dialogClassName="noteModal"
-      // centered
+      centered
       show={props.showNoteModal}
       onHide={() => {
         handleUpdateNote(props.note.id);
@@ -52,8 +55,9 @@ function NoteModal(props: NoteModalProps) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <textarea
-          style={{ width: "100%" }}
+        <Form.Control
+          as="textarea"
+          style={{ width: "100%", height: "18em" }}
           value={newEditedNote.text}
           onChange={(e) => {
             setNewEditedNote({
@@ -68,7 +72,10 @@ function NoteModal(props: NoteModalProps) {
         <p>
           <img
             src={iconTrash}
-            onClick={() => props.handleDeleteNote(props.note.id)}
+            onClick={() => {
+              props.handleDeleteNote(props.note.id);
+              props.setShowNoteModal(false);
+            }}
             alt="Delete note"
           />
         </p>

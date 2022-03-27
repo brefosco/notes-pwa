@@ -36,7 +36,9 @@ function Notes() {
       <Input
       //   TODO: handleAddNote={handleAddNote} ADD THIS PROP
       />
-      <hr style={{ padding: "10px" }} color="black" />
+      {/* <hr style={{ padding: "5px", backgroundColor: "black" }} color="black"  /> */}
+      <div style={{ marginTop:'1em', border:"1px solid black" }}> </div>
+
       <Row>
         {notes.map((note: NoteInterface, key: number) => (
           <Note handleDeleteNote={handleDeleteNote} note={note} id={key} />
